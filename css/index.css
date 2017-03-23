@@ -14,8 +14,8 @@ header {
 	font-weight: bold;
 	line-height: 45px;
 	color: #fff;
-	position: absolute;
-	left: 40px;
+	float: left;
+	margin-left: 40px;
 }
 .head-banner {
 	line-height: 45px;
