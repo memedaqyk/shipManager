@@ -4,10 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0">
 	<title>基于GIS的海洋泊船系统</title>
+
+	<link rel="stylesheet" href="jqueryui/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 	<link rel="stylesheet" href="https://js.arcgis.com/3.20/esri/css/esri.css">
 	<script src="https://js.arcgis.com/3.20/"></script>
-	<link rel="stylesheet" href="css/index.css">
+
+	
+
+  	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/ship-manager.css">
+
+	
+
+
+
 </head>
 <body>
 	<header>
@@ -21,11 +34,35 @@
 		</div>	
 	</header>
 	<main>
+		<div class="main-left">
+			<ul class="left-ul">
+				<li>JIU LONG 7</li>
+				<li>BAOYING808</li>
+				<li>HAI CHI</li>
+				<li>SHUN JING</li>
+				<li>MI LAN</li>
+				<li>JINLONG81</li>
+				<li>HAI DA 788</li>
+				<li>RUI NING 1</li>
+				<li>WEINUO2</li>
+				<li>CSCL ASIA</li>
+			</ul>
+		</div>
 		<div class="content">
 			<div id="map"></div>
 		</div>
+		<div class="main-bottom">
+			<div class="bottom-info">
+				
+			</div>
+		</div>
 	</main>
 	<footer></footer>
+	<div id="dialog" title="Basic dialog">
+  <p>这是一个动画显示的对话框，用于显示信息。对话框窗口可以移动，调整尺寸，默认可通过 'x' 图标关闭。</p>
+</div>
+ 
+<button id="opener">打开对话框</button>
 </body>
 <script src="js/ship-manager.js"></script>
 </html>
