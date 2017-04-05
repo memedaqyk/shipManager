@@ -5,12 +5,15 @@
 	<meta name="viewport" content="initial-scale=1.0">
 	<title>基于GIS的海洋泊船系统</title>
 
-	<link rel="stylesheet" href="jqueryui/jquery-ui.css">
-  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<!-- <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+  	
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-	<link rel="stylesheet" href="https://js.arcgis.com/3.20/esri/css/esri.css">
-	<script src="https://js.arcgis.com/3.20/"></script>
+	 -->
+	<script src="js/jquery.min.js"></script>
+	<!-- <link rel="stylesheet" href="https://js.arcgis.com/3.20/esri/css/esri.css"> -->
+	<link rel="stylesheet" href="css/esri.css">
+	<!-- <script src="https://js.arcgis.com/3.20/"></script> -->
+	<script src="js/init.js"></script>
 
 	
 
@@ -24,31 +27,33 @@
 </head>
 <body>
 	<header>
-		<div class="head-title">海洋泊船系统</div>
+	<div class="banner">
+		<div class="head-title"><a href="index.html">海洋泊船系统</a></div>
 		<div class="head-banner">
 			<ul>
-				<li><a href="index.html">船队查询</a></li>
 				<li><a href="ship-manager.html">船队管理</a></li>
-				<li><a href="#">船队</a></li>
+				<li><a href="##">我的船队</a></li>
+				<li><a href="##">港口</a></li>
 			</ul>
 		</div>	
+	</div>
 	</header>
 	<main>
 		<div class="main-left">
 			<ul class="left-ul">
-				<li>JIU LONG 7</li>
-				<li>BAOYING808</li>
-				<li>HAI CHI</li>
-				<li>SHUN JING</li>
-				<li>MI LAN</li>
-				<li>JINLONG81</li>
-				<li>HAI DA 788</li>
-				<li>RUI NING 1</li>
-				<li>WEINUO2</li>
-				<li>CSCL ASIA</li>
+				<li id="li-1">GANYUYU 14069</li>
+				<li>JUN YANG 1</li>
+				<li>GUANGZHOUFAZHAN1</li>
+				<li>MAO FA 018</li>
+				<li>FU SHUN 5</li>
+				<li>PENG XING 21</li>
+				<li>HAIYANGSHIYOU610</li>
+				<li>CHANG WANG MEN</li>
+				<li>SAN HE JUN</li>
+				<li>XINHONG928</li>
 			</ul>
 		</div>
-		<div class="content">
+		<div class="main-content">
 			<div id="map"></div>
 		</div>
 		<div class="main-bottom">
@@ -57,12 +62,12 @@
 			</div>
 		</div>
 	</main>
-	<footer></footer>
-	<div id="dialog" title="Basic dialog">
-  <p>这是一个动画显示的对话框，用于显示信息。对话框窗口可以移动，调整尺寸，默认可通过 'x' 图标关闭。</p>
-</div>
- 
-<button id="opener">打开对话框</button>
+	
+<div id="mytable"></div>
+
+<footer>
+		<p>CopyRight&copy2017合肥工业大学 | 地理信息科学<a id="backTop" href="#">   回到顶部</a></p>
+</footer>
 </body>
 <script src="js/ship-manager.js"></script>
 </html>

@@ -3,21 +3,70 @@ html, body {
     margin: 0;
     padding: 0;
 }
+* {
+	padding: 0;
+	margin: 0;
+}
 #map {	
 	width: 100%;
 	height: 100%;
 }
 .main-left {
 	float: left;
-	width: 200px;
-	background-color: #D5F2FF;
+	width: 180px;
+	background-color: #E2E3E4;
 	overflow: hidden;
 
 }
+.main-left li {
+	list-style: none;
+	text-align: center;
+	font-size: 16px;
+	padding: 6px 0 6px 0;
+}
 .main-left li:hover{
 	cursor: pointer;
-	background-color: #B8E6FE;
+	background-color: #364B98;
+	color: white;
 }
-.content {
-	margin-left: 200px;
+.main-content {
+	margin-left: 180px;
 }
+
+
+.table11_2 table {
+	width:100%;
+	margin:15px 0;
+	border:0;
+}
+.table11_2 th {
+	background-color:#ACF3FF;
+	color:#000000
+}
+.table11_2,.table11_2 th,.table11_2 td {
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border-collapse:collapse;
+}
+.table11_2 th,.table11_2 td {
+	border: 1px solid #90effe;
+	border-width:1px 0 1px 0;
+	border:2px inset #ffffff;
+}
+.table11_2 tr {
+	border: 1px solid #ffffff;
+}
+.table11_2 tr:nth-child(odd){
+	background-color:#e3fbfe;
+}
+.table11_2 tr:nth-child(even){
+	background-color:#ffffff;
+}
+
+/*#mytable {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #ccc;
+}*/
